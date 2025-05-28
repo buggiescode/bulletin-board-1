@@ -8,8 +8,6 @@
   </div>
 </div>
 
-<hr>
-
 <h2>Add a new Post</h2>
 <form action="/insert_post" method="post">
   <div>
@@ -23,14 +21,14 @@
   </div>
 
   <div>
-    <label for="expires_on_field">Expires On</label>
+    <label for="expires_on_field">Expires on</label>
     <input id="expires_on_field" type="date" name="expires_on">
   </div>
 
   <input id="board_id_field" type="hidden" name="board_id" value="<%= @the_board.id %>">
 
   <button>
-    Add Post
+    Add post
   </button>
 
 </form>
@@ -45,8 +43,8 @@
   <tr>
     <th>Title</th>
     <th>Body</th>
-    <th>Posted On</th>
-    <th>Expires On</th>
+    <th>Posted on</th>
+    <th>Expires on</th>
   </tr>
 
   <% matching_posts.each do |post| %>
